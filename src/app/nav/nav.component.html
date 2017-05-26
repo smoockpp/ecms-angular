@@ -1,0 +1,34 @@
+<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-2 sidebar">
+				<a class="navbar-brand">ECMS</a>
+				<div class="sidenav-item col-md-12">
+					<a routerLink="dashboard" class="sidenav-link"><span class="glyphicon glyphicon-dashboard"></span> Dashboard <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+
+				</div>
+				<div class="sidenav-item col-md-12">
+					<a class="sidenav-link" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="templates-dropdown"><span class="glyphicon glyphicon-list"></span> Templates <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+					<div id="templates-dropdown" [ngbCollapse]="isCollapsed" class="sidenav-dropdown col-md-11 col-md-offset-1">
+						<div class="sidenav-item col-md-12">
+							<a routerLink="templates/create" class="sidenav-dropdown-link">Create Template <span class="glyphicon glyphicon-plus pull-right"></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="sidenav-item col-md-12">
+					<a data-page="/create-template" class="sidenav-link"><span class="glyphicon glyphicon-list"></span> Templates <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+				</div>
+
+			</div>
+
+			<nav class="col-md-10 offset-md-2 navbar">
+
+			</nav>
+
+		</div>
+		<div class="row">
+			<div class="content col-md-10 offset-md-2">
+				<router-outlet></router-outlet>
+			</div>
+		</div>
+	</div>

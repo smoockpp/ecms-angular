@@ -1,0 +1,29 @@
+// Color variables
+
+$black                  : #000;
+$white                  : #fff;
+$white-smoke            : #FEFDD6;
+$silver                 : #ccc;
+$mortar                 : #3E3E37;
+$tulip-tree             : #E7AD47;
+$rhino                  : #464D5C;
+$yellow-green           : #A3B254;
+$frost                  : #E4EBCE;
+
+
+// App Colors
+
+$color-main             : $tulip-tree;
+$color-sec              : $rhino;
+$color-ter              : $yellow-green;
+
+
+$text-main              : $mortar;
+
+
+
+
+
+// Borders
+
+$nav-border             : 2px solid darken($yellow-green, 10%);

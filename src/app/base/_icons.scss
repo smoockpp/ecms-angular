@@ -1,0 +1,20 @@
+.icon-toggler {
+    &:after {
+        content: '\2630';
+        display: inline-block;
+        color: $text-main;
+        font-size: 2em;
+    }
+}
+
+.icon-down-arrow {
+    &:after {
+        content: '>';
+        display: inline-block;
+        color: $text-main;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 3em;
+        transform: rotate(90deg) scale(1, 3);
+    }
+}
