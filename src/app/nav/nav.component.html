@@ -8,10 +8,10 @@
 
 				</div>
 				<div class="sidenav-item col-md-12">
-					<a class="sidenav-link" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="templates-dropdown"><span class="glyphicon glyphicon-list"></span> Templates <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-					<div id="templates-dropdown" [ngbCollapse]="isCollapsed" class="sidenav-dropdown col-md-11 col-md-offset-1">
+					<a class="sidenav-link" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="isCollapsed" aria-controls="templates-dropdown"><span class="glyphicon glyphicon-list"></span> Templates <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+					<div id="templates-dropdown" [ngbCollapse]="!isCollapsed" class="sidenav-dropdown col-md-11 col-md-offset-1">
 						<div class="sidenav-item col-md-12">
-							<a routerLink="templates/create" class="sidenav-dropdown-link">Create Template <span class="glyphicon glyphicon-plus pull-right"></span></a>
+							<a routerLink="templates/create" class="sidenav-dropdown-link"> Create Template <span class="glyphicon glyphicon-plus pull-right"></span></a>
 						</div>
 					</div>
 				</div>

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { TemplateCreateComponent } from './template-create/template-create.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { TemplateCreateService } from './template-create/template-create.service';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -29,7 +30,7 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [TemplateCreateService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
